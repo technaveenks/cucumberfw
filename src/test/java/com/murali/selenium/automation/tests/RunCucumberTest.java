@@ -11,7 +11,7 @@ import org.junit.platform.suite.api.Suite;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("com/murali/selenium/automation")
-//@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
+//@ConfigurationParameter(key = "pretty", value = "json:target/cucumber.json")
 @ConfigurationParameter(key = "pretty", value = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:")
 public class RunCucumberTest {
 }
